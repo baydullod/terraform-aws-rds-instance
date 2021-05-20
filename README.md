@@ -28,6 +28,7 @@ module "rds" {
 
 
 output "region" {
+<<<<<<< HEAD
 	value = module.rds.region
 }
 output "subnet_list" {
@@ -41,3 +42,16 @@ output "rds" {
 }
 
 ```
+=======
+	value = rds.region
+}
+output "subnet_list" {
+	value = rds.subnet_list
+}
+output "allowed_hosts" {
+	value = rds.allowed_hosts
+}
+output "wordpress_db_NAME" {
+	value = rds.DB_NAME
+}
+>>>>>>> 7e570330902fbea7c5e45d23f6cd30d542ec5688
