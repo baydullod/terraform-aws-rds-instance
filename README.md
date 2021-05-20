@@ -27,14 +27,14 @@ allowed_hosts = [
 }
 
 output "region" {
-	value = module.wordpress_db.region
+	value = rds.region
 }
 output "subnet_list" {
-	value = module.wordpress_db.subnet_list
+	value = rds.subnet_list
 }
 output "allowed_hosts" {
-	value = module.wordpress_db.allowed_hosts
+	value = rds.allowed_hosts
 }
 output "wordpress_db_NAME" {
-	value = module.wordpress_db.DB_NAME
+	value = rds.DB_NAME
 }
